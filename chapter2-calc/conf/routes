@@ -5,3 +5,11 @@
 #  - a GET request to /concat/<str>/<str>/...   should call CalcController.concat
 #  - a GET request to /sort?num=<num>&num=<num> should call CalcController.sort
 #  - a GET request to /howto/add/<int>/to/<int> should call CalcController.howToAdd
+
+# e.g. http://localhost:9000/sort?num=1&&num=2
+
+GET        /add/:a/to/:b          controllers.CalcController.add(a: Int, b: Int)
+GET        /and/:a/with/:b        controllers.CalcController.and(a: Boolean, b: Boolean)
+GET        /concat/*args          controllers.CalcController.concat(args: String)
+GET        /sort                  controllers.CalcController.sort(num: List[Int])
+GET        /howto/add/:a/to/:b    controllers.CalcController.howToAdd(a: Int, b: Int)
