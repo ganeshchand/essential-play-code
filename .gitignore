@@ -5,7 +5,7 @@ target
 tmp
 .history
 dist
-/.idea
+.idea
 /*.iml
 /out
 /.idea_modules
@@ -15,3 +15,4 @@ dist
 /.settings
 *.sublime-project
 *.sublime-workspace
+.DS_Store
